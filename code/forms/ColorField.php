@@ -10,9 +10,9 @@ class ColorField extends TextField {
 	
 	function Field() {
 		$this->addExtraClass('ColorPickerInput');
-		Requirements::javascript("colorpicker/javascript/colorpicker.js");
-		Requirements::javascript("colorpicker/javascript/colorfield.js");
-		Requirements::css("colorpicker/css/colorpicker.css");
+		Requirements::javascript("color-picker/javascript/colorpicker.js");
+		Requirements::javascript("color-picker/javascript/colorfield.js");
+		Requirements::css("color-picker/css/colorpicker.css");
 		
 		$style = 'background-color:' . ($this->value ? '#' . $this->value : '#ffffff'). 
 				 '; color: ' . ($this->getTextColor()) . ';';
